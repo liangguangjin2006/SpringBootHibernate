@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>thymeleaf示例</title>
+</head>
+<body>
+<h1>thymeleaf示例</h1>
+<h3>demo.html</h3>
+<h3>name:<span th:text="${params.name}"></span></h3>
+<h3>time:<span th:text="${params.currentTime}"></span></h3>
+<h3 th:text="${name}"></h3>
+<h3 th:text="'文本中间插入的数  ' + ${params.currentTime} + '  文字中间 >> 文字后面  ' + ${params.currentTime} " ></h3>
+</body>
+</html>
